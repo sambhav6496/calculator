@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .calculator{
+    border: 5px solid black;
+    background: gray;
+    height: 289px;
+    width: 245px;
+    border-radius: 2%;
+  }
+  .display{
+    height: 50px;
+    width: 100%;
+    background: black;
+  }
+  .display{
+    color: white;
+  }
+
+
+  .number-container{
+    display: flex;
+  }
+
+  .number, .decimal, .operator,.equal, .clear{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 49px;
+    width: 49px;
+    border: 2px solid black;
+    margin: 4px;
+    background: blueviolet;
+    border-radius: 10%;
+  }
+
+  .equal, .zero, .AC{
+    width: 108px;
+  }
