@@ -1,4 +1,4 @@
-let display = $('.display')
+let display = $('.display-text')
 let number = $('.number')
 let operator = $('.operator')
 let equal = $('.equal')
@@ -50,8 +50,8 @@ equal.click(function(){
 
 function performOperation(number1Input, number2Input, operatorInput){
     let result = 0
-    number1Input = parseInt(number1Input)
-    number2Input = parseInt(number2Input)
+    number1Input = parseFloat(number1Input)
+    number2Input = parseFloat(number2Input)
     if(operatorInput === "+"){
         result = number1Input + number2Input
     }else if(operatorInput === "-"){
@@ -66,3 +66,12 @@ function performOperation(number1Input, number2Input, operatorInput){
     number2Value = 0
     userInput = true
 }
+
+clear.click(function(){
+    userInput = true
+    number1Value = 0;
+    number2Value = 0;
+    operatorFlag = false;
+    operatorValue = undefined;
+    display.text(`${number1Value}`)
+})
